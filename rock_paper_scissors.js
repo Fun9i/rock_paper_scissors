@@ -20,7 +20,10 @@ function computerChoice() {
 		return 'scissors';
 	}
 }
-computerChoice();
 
-userSelection = prompt('Input your selectin(rock, paper or scissors)', '');
-console.log(userSelection.toLowerCase());
+function play(computerSelection, userSelection) {
+    computerSelection = computerChoice()
+    userSelection = prompt('Input your selection(rock, paper or scissors)', '');
+    lowerCaseSelection = userSelection.toLowerCase(); 
+    console.log(lowerCaseSelection);
+}
